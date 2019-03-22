@@ -1,6 +1,6 @@
 ---
 title:  "ManageIQ Installation in Docker"
-subtitle: "ManageIQ image pull in Docker and using ManageIQ instance"
+subtitle: ""
 author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
 image: "img/a.jpg"
