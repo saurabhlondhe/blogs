@@ -71,6 +71,7 @@
 
 .card__container--closed .card__caption {
 	font-size: 1em;
+	text-shadow: 0 0 5px #000;
 	max-width: auto;
 	padding: 10px 10px 25px;
 	-webkit-transform: translateY(-100%);
