@@ -3,7 +3,7 @@ title:  "python.learning"
 date:   2018-11-04
 author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
-image: "img/angular.jpg"
+image: "img/python-trick.jpg"
 ---
 ---
 ## Dictionary

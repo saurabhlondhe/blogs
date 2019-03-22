@@ -2,7 +2,7 @@
 title:  "Working with PyQt4"
 author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
-image: "img/angular.jpg"
+image: "img/python.jpg"
 date:   2018-02-25
 ---
 # Working With PyQt4

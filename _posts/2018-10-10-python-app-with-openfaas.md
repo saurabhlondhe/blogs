@@ -2,7 +2,7 @@
 title:  "Deploy a python app using OpenFaaS"
 author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
-image: "img/angular.jpg"
+image: "img/openfaas.png"
 date:   2018-10-10
 ---
 OpenFaaS provides function as a service. FaaS is framework for building serverless functions on top of containers. FaaS can be run using Docker Swarm.

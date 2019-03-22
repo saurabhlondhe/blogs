@@ -2,7 +2,7 @@
 title:  "Fileop module in Python"
 author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
-image: "img/angular.jpg"
+image: "img/files.jpg"
 date:   2018-10-22
 ---
 [![PyPi Version][pypiversion-button]][pypi]

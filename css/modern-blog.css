@@ -48,7 +48,7 @@
 .card__content {
 	position: relative;
 	width: 100%;
-	max-width: 800px;
+	max-width: 80%;
 	height: auto;
 	margin: 400px auto 60px;
 	padding: 30px 40px 22px;
@@ -109,7 +109,7 @@
 }
 
 .card__copy p:first-of-type {
-	font-size: 1.5em;
+	font-size: 1em;
 	padding: 0 0 1em 0;
 }
 

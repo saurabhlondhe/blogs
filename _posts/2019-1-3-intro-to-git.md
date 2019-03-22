@@ -3,7 +3,7 @@ title:  "Let's start with git"
 date:   2019-03-01
 author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
-image: "img/angular.jpg"
+image: "img/git.jpg"
 ---
 # An intro git for Beginners 
 ### Let's talk little bit about why git?

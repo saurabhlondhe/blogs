@@ -2,7 +2,7 @@
 title:  "IRC Bot in Python"
 author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
-image: "img/angular.jpg"
+image: "img/bot.jpg"
 date:   2018-10-24
 ---
 ![IRC #demobot](https://img.shields.io/badge/freenode-%23demobot-green.svg)
