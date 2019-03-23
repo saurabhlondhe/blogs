@@ -323,4 +323,5 @@ window.onload = demo.init;
 
 window.addEventListener("load",function(){
     document.getElementById("loading").style.display = "none";
+    document.getElementById("wrapper").style.pointerEvents = "auto";
 },false);

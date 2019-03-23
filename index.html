@@ -28,7 +28,7 @@ layout: compress
 </head>
 <body class="body">
         <div id="loading">
-            <img src="/img/loading.gif" alt="">
+            <img src="img/loading.gif" alt="">
         </div>
 <div class="container">
     <header class="header">
@@ -44,7 +44,7 @@ layout: compress
         <!-- trianglify pattern container -->
         <div class="pattern pattern--hidden"></div>
         <!-- cards -->
-        <div class="wrapper">
+        <div class="wrapper" id="wrapper">
             {% for post in site.posts %}
             <div class="card" data-id="{{ post.id }}">
                 <div class="card__container card__container--closed">
