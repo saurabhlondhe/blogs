@@ -320,3 +320,7 @@ var demo = (function (window) {
 
 // Kickstart Demo.
 window.onload = demo.init;
+
+window.addEventListener("load",function(){
+    document.getElementById("loading").style.display = "none";
+},false);
