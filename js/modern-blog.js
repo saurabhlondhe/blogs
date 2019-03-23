@@ -226,8 +226,20 @@ var demo = (function (window) {
      * @private
      */
     var _onCardMove = function (track) {
-
-        var radius = track.width / 2;
+        var radius;
+        if( navigator.userAgent.match(/Android/i)
+            || navigator.userAgent.match(/webOS/i)
+            || navigator.userAgent.match(/iPhone/i)
+            || navigator.userAgent.match(/iPad/i)
+            || navigator.userAgent.match(/iPod/i)
+            || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Windows Phone/i)
+            ) {
+            radius= track.width ;
+          } else {
+            radius= track.width / 2;
+          }
+         
 
         var center = {
             x: track.x,
@@ -235,7 +247,6 @@ var demo = (function (window) {
         };
 
         polygonMap.points.forEach(function (point, i) {
-
             if (_detectPointInCircle(point, radius, center)) {
                 $(polygonMap.paths[i]).attr('class', CLASSES.polygon + ' ' + CLASSES.polygonHidden);
             } else {
