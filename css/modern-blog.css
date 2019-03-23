@@ -3,6 +3,10 @@ pre {
 	word-wrap: normal;
 	white-space: pre;
   }
+
+  p > img{
+	max-width: 100%;
+}
 /*CARD */
 
 .card {
