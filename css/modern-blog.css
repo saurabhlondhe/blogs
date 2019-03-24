@@ -7,7 +7,11 @@ pre {
   p > img{
 	max-width: 100%;
 }
-
+table, th, td {
+	border: 1px solid black;
+	padding: 10px;
+  border-collapse: collapse;
+}
 #loading {
 	position: fixed;
 	width: 100%;
@@ -268,8 +272,8 @@ body.body--hidden .header {
 }
 
 a {
-	text-decoration: none;
-	color: #de6551;
+	text-decoration: underline;
+	color: gray;
 	outline: none;
 }
 
@@ -309,6 +313,11 @@ a:focus {
 	font-weight: 400;
 	line-height: 1.2;
 	margin: .5em 0 0;
+}
+.header h1 a{
+	font-family: COURIER;
+	font-weight: bold;
+	text-decoration: none !important;
 }
 
 .header h1 span {
