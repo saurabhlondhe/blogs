@@ -30,3 +30,17 @@ I'll go with existing [httpd](https://hub.docker.com/_/httpd) image and configur
 3.  For command help you can use ```View push commands``` tab, which will include all commands used for uploading an image to your AWS repository
 
 ![push-command-help](../img/aws-ecr/3.png)
+
+Popup will apear with some commands as follows
+
+![push-command-popup](../img/aws-ecr/4.png)
+
+4.  Executing first command
+
+```sh
+aws ecr get-login --no-include-email --region ap-south-1
+```
+
+![aws-login](../img/aws-ecr/5.png)
+
+copy the output and execute that command, after that ![login-img](../img/aws-ecr/6.png) message will appear.
