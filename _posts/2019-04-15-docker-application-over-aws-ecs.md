@@ -20,20 +20,20 @@ I'll go with existing [httpd](https://hub.docker.com/_/httpd) image and configur
 
 1.  Login to AWS and go to Services-> ECR, and create a ECR repository
 
-![ecr-image](../img/aws-ecr/1.png)
+![ecr-image](img/aws-ecr/1.png)
 
 2.  Give title to repository.
 >   this title should be more specific. While downloading this image the same title is used with versions
 
-![repo-name](../img/aws-ecr/2.png)
+![repo-name](img/aws-ecr/2.png)
 
 3.  For command help you can use ```View push commands``` tab, which will include all commands used for uploading an image to your AWS repository
 
-![push-command-help](../img/aws-ecr/3.png)
+![push-command-help](img/aws-ecr/3.png)
 
 Popup will apear with some commands as follows
 
-![push-command-popup](../img/aws-ecr/4.png)
+![push-command-popup](img/aws-ecr/4.png)
 
 4.  Executing first command
 
@@ -41,6 +41,6 @@ Popup will apear with some commands as follows
 aws ecr get-login --no-include-email --region ap-south-1
 ```
 
-![aws-login](../img/aws-ecr/5.png)
+![aws-login](img/aws-ecr/5.png)
 
-copy the output and execute that command, after that ![login-img](../img/aws-ecr/6.png) message will appear.
+copy the output and execute that command, after that ![login-img](img/aws-ecr/6.png) message will appear.
