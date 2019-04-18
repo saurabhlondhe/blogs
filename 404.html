@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeui/4.1.15/primeui-all.min.css">
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var imgArr=["img/PNF.gif","img/404.gif"]
+            var _404=document.getElementById('404-img');
+        _404.src=imgArr[Math.floor(Math.random() * 2)];
+        };
+        
+    </script>
+    <div>
+        <center>
+            <img id="404-img" style="max-width:100%">
+        </center>    
+    </div>    
+    <center><font style="font-family:Courier" size="50px">You are lost get back to <a style="color:black;cursor:pointer" href="https://saurabhlondhe.xyz/blogs/">blog</a> ;)</font></center>
+</body>
+</html>
