@@ -20,20 +20,20 @@ I'll go with existing [httpd](https://hub.docker.com/_/httpd) image and configur
 
 1.  Login to AWS and go to Services-> ECR, and create a ECR repository
 
-![ecr-image](img/aws-ecr/1.png)
+![ecr-image](../img/aws-ecr/1.png)
 
 2.  Give title to repository.
 >   this title should be more specific. While downloading this image the same title is used with versions
 
-![repo-name](img/aws-ecr/2.png)
+![repo-name](../img/aws-ecr/2.png)
 
 3.  For command help you can use ```View push commands``` tab, which will include all commands used for uploading an image to your AWS repository
 
-![push-command-help](img/aws-ecr/3.png)
+![push-command-help](../img/aws-ecr/3.png)
 
-Popup will apear with some commands as follows
+Popup will appear with some commands as follows
 
-![push-command-popup](img/aws-ecr/4.png)
+![push-command-popup](../img/aws-ecr/4.png)
 
 4.  Executing first command to login
 
@@ -41,9 +41,9 @@ Popup will apear with some commands as follows
 aws ecr get-login --no-include-email --region ap-south-1
 ```
 
-![aws-login](img/aws-ecr/5.png)
+![aws-login](../img/aws-ecr/5.png)
 
-copy the output and execute that command, after that ![login-img](img/aws-ecr/6.png) message will appear.
+copy the output and execute that command, after that ![login-img](../img/aws-ecr/6.png) message will appear.
 
 5.  Pull image from docker hub or create from ```Dockerfile```. I'll pull httpd from docker hub
 
@@ -62,35 +62,48 @@ Following will be output of  "```docker images```"
 ```
 
 6.  Take ssh of ```httpd``` image to configure it manually.
-![ssh-httpd-image](img/aws-ecr/ssh-httpd.png)
+![ssh-httpd-image](../img/aws-ecr/ssh-httpd.png)
 
     update ```/urs/local/apache2/htdocs/index.html``` and change content.
 
-![index.html-file](img/aws-ecr/7.png)
+![index.html-file](../img/aws-ecr/7.png)
 
-to save the image with its content it need to be commited. 
+to save the image with its content it need to be committed. 
 
-![aws-login](img/aws-ecr/9.png)
+![aws-login](../img/aws-ecr/9.png)
 
 -   Fist get container id using ```docker ps``` and use that id to commit your image with the same name of repository that we have created in ECR.
 
     ```sh
     docker commit 28d64655f452 test-http-server
     ```
--   You can see commited image by executing ```docker images```
+-   You can see committed image by executing ```docker images```
+
+7.  After committing an image it can be pushed to AWS ECR(Elastic Container Registry)
+
+    ```sh
+    docker push <your ECR url>/test-http-server:latest
+    ```
+![aws-login](../img/aws-ecr/10.png)
+
+After push completes it will reflect at test-http-server repo.
+
+![aws-login](../img/aws-ecr/11.png)
+
+8.  Now we'll need to create a cluster so that we will be able to launch multiple instances in a same cluster. We'll creating EC2 cluster.
+
+>   Follow the screenshots given bellow.
 
 
-![aws-login](img/aws-ecr/10.png)
-![aws-login](img/aws-ecr/11.png)
-![aws-login](img/aws-ecr/12.png)
-![aws-login](img/aws-ecr/13.png)
-![aws-login](img/aws-ecr/14.png)
-![aws-login](img/aws-ecr/15.png)
-![aws-login](img/aws-ecr/16.png)
-![aws-login](img/aws-ecr/17.png)
-![aws-login](img/aws-ecr/18.png)
-![aws-login](img/aws-ecr/19.png)
-![aws-login](img/aws-ecr/20.png)
-![aws-login](img/aws-ecr/21.png)
-![aws-login](img/aws-ecr/22.png)
-![aws-login](img/aws-ecr/23.png)
+![aws-login](../img/aws-ecr/12.png)
+![aws-login](../img/aws-ecr/13.png)
+![aws-login](../img/aws-ecr/14.png)
+![aws-login](../img/aws-ecr/15.png)
+![aws-login](../img/aws-ecr/16.png)
+![aws-login](../img/aws-ecr/17.png)
+![aws-login](../img/aws-ecr/18.png)
+![aws-login](../img/aws-ecr/19.png)
+![aws-login](../img/aws-ecr/20.png)
+![aws-login](../img/aws-ecr/21.png)
+![aws-login](../img/aws-ecr/22.png)
+![aws-login](../img/aws-ecr/23.png)
