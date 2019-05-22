@@ -46,7 +46,7 @@ layout: compress
         <div class="pattern pattern--hidden"></div>
         <!-- cards -->
         <div class="wrapper" id="wrapper">
-            {% for post in site.posts %}
+            {% for post in site.posts limit:9 %}
             <div class="card" data-id="{{ post.id }}">
                 <div class="card__container card__container--closed">
                     <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
