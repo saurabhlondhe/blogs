@@ -5,4 +5,4 @@ keywords: Blogs,Saurabh Londhe,Open Source,Web,Git
 author: Saurabh Londhe
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-paginate: 5
+paginate: 6
