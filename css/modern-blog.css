@@ -1,12 +1,15 @@
 .pagination a, .pagination span {
 	padding: 7px 18px;
-	border: 1px solid rgb(255, 255, 255);
+	border: 1px solid black
 	margin-left: -2px;
 	margin-right: -2px;
-	background-color: #ffffff00;
+	background-color: #fff;
+	border-radius: 10px;
 	display: inline-block;
 }
-
+.pagination{
+	margin-bottom: 5vh;
+}
 .pagination a {    
 	&:hover {
 			background-color: #f1f1f1;
