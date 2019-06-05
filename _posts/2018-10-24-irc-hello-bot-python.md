@@ -38,7 +38,7 @@ print(irc.recv(2048))       # receive a message from server
 -   *nickname : botname
 
 join irc channel [here](https://webchat.freenode.net/?channels=%23demobot) before starting
-```sh
+```
 PRIVMSG <channel-name> <user-name> <msg> #sends private messege to channel
 ```
 

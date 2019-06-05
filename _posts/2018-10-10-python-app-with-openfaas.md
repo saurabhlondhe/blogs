@@ -13,19 +13,27 @@ With FaaS developers can focun on development more than servers and deploys. Faa
 ### Lets start with Simple Python app
 -   create a folder for our files:
 
-        $ mkdir myapp && cd myapp
+    ```sh
+    $ mkdir myapp && cd myapp
+    ```
 
 -   Get templates from from github before proceding
 
-        $ faas-cli template pull
+    ```sh
+    $ faas-cli template pull
+    ```
     
 -   we are using ```python3``` for development you can use ```python2``` also. user following syntax to start with app.
 
-        $ faas-cli new --lang <language> <app-name> --prefix="<your-docker-username>"
+    ```sh
+    $ faas-cli new --lang <language> <app-name> --prefix="<your-docker-username>"
+    ```
 
     -   we will use python3 so our command will be:
 
-            $ faas-cli new --lang python3 elements-sum --prefix="<your-docker-username>"
+        ```sh
+        $ faas-cli new --lang python3 elements-sum --prefix="<your-docker-username>"
+        ```
 
 -   now you will be having following directory structure
 
@@ -63,7 +71,9 @@ With FaaS developers can focun on development more than servers and deploys. Faa
 
     -   build, push to docker hub and deploy function containers
 
-            $ faas-cli up -f elements-sum.yml
+        ```sh
+        $ faas-cli up -f elements-sum.yml
+        ```
 
         -   if you got error then login to docker from CLI using ```$docker login```
         -   app will be deployed to OpenFaaS [http://127.0.0.1:8080/ui/](http://127.0.0.1:8080/ui)
@@ -74,11 +84,13 @@ With FaaS developers can focun on development more than servers and deploys. Faa
             will provide output as ```150```
 
             
-        <img src="/static/assets/img/blog/openfaas/openfaas_demo1.png" style="width: 70%">
+        <img src="https://saurabhlondhe.github.io/static/assets/img/blog/openfaas/openfaas_demo1.png" style="width: 70%">
 
         -   or 
 
-                $ echo 10,20,30,40,50 | faas-cli invoke elements-sum
+            ```sh
+            $ echo 10,20,30,40,50 | faas-cli invoke elements-sum
+            ```
 
     -   You can add other functions in ```./elements-sum/handler.py```
 

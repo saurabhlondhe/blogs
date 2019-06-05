@@ -19,12 +19,12 @@ The first two things you'll want to do are install git and create a free GitHub 
 -   Installing on Linux
     
     If you are Fedora guy
-    ```
+    ```sh
     sudo dnf install git-all
     ```
 
     elif you are debian/ubuntu guy
-    ```
+    ```sh
     sudo apt install git-all
     ```
     else have a look [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -94,6 +94,7 @@ git clone "URL" foldername
     $ touch test.txt        #creats a file
     ```
 
+
     ```sh
     $ git status
     On branch master
@@ -118,7 +119,7 @@ git clone "URL" foldername
     ```
 
 
-    ![Staging Area](/static/assets/img/blog/start_git/staging_area.png)
+    ![Staging Area](https://saurabhlondhe.github.io/static/assets/img/blog/start_git/staging_area.png)
 
 
     ```sh
@@ -142,7 +143,7 @@ Till now we have created a repo, added content, committed it and successfully pu
 
 If you still stuck somewhere use following cheat sheet :)
 
-![Staging Area](/static/assets/img/blog/start_git/git-cheatsheet-simple.jpg)
+![Staging Area](https://saurabhlondhe.github.io/static/assets/img/blog/start_git/git-cheatsheet-simple.jpg)
 
 ---
 
