@@ -76,7 +76,7 @@ The theory might make you sleepy try some hands-on
 
 ---
 
-### Now, for installing angular cli, follows the steps given below:
+### Now, for installing angular cli, follow the steps given below:
 -   Install node.js first if not already install (which I think you probably would have downloaded)
 Open the node.js command prompt and issue the command:
 
@@ -142,4 +142,10 @@ Similarly, you can create all other building blocks listed in the table below:
 
     -  After build Angular project is converted into a JS code.
     -  ```ng build``` is used for dev build and ```ng build --prod``` is used for prod ( production ) build.
+    
+    ```sh
+    ng build    # compile the angular project to plain html/css/js with default environment
+
+    ng build --prod # compiles the angular project with prod environmant file i.e. _environment.prod.ts_
+    ```
     -  This creats a ```./dist/project-name/``` folder with all HTML/CSS and assets which can be deployed on any IIS, Apache servers.
