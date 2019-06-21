@@ -235,7 +235,7 @@ var demo = (function (window) {
             || navigator.userAgent.match(/BlackBerry/i)
             || navigator.userAgent.match(/Windows Phone/i)
             ) {
-            radius= track.width ;
+            radius= track.width * 1.5;
           } else {
             radius= track.width / 2;
           }
