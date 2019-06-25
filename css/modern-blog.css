@@ -241,8 +241,13 @@ table, th, td {
 .meta__date {
 	margin: 0 0 0 auto;
 }
-
+.inner-img{
+	width: 30%;
+}
 @media only screen and (max-width: 980px) {
+	.inner-img{
+		width: 90%;
+	}
 	.card {
 		width: 46%;
 		padding-bottom: 32.2%;
