@@ -19,11 +19,11 @@ At Fiddler side
 
 -   Note the port of proxy server which is `8888` by default
 
-![Fiddler connections](img/fiddler/connections.png)
+![Fiddler connections](/img/fiddler/connections.png)
 
 -   Hover on right corner on online tab so that server's ip will be shown
 
-    ![Fiddler IP](img/fiddler/OnlineTooltip.png)
+    ![Fiddler IP](/img/fiddler/OnlineTooltip.png)
 
 ---
 
@@ -32,22 +32,22 @@ At Android side
 -   Open WIFI settings for modifying the connection
     -   Touch and hold wifi name and select `Manage network settings`
 
-    <img src="img/fiddler/android-1.png" class="inner-img">
+    <img src="/img/fiddler/android-1.png" class="inner-img">
 
     -   Choose `Show advance options`
     -   At Proxy settings choose Manual
 
-    <img src="img/fiddler/android-2.png" class="inner-img">
+    <img src="/img/fiddler/android-2.png" class="inner-img">
 
     -   Enter Fiddler's IP address at `Proxy host name`
     -   Enter `Proxy Port` i.e. `8888` 
     -   Save the settings
 
-    <img src="img/fiddler/android-3.png" class="inner-img">
+    <img src="/img/fiddler/android-3.png" class="inner-img">
 
     -   Now to Varify connection please hit the url [ipv4.fiddler:8888](http://ipv4.fiddler:8888) in Android browser. You will get web page as below
     
-    <img src="img/fiddler/DownloadFiddlerRootCert.png" class="inner-img">
+    <img src="/img/fiddler/DownloadFiddlerRootCert.png" class="inner-img">
 
     -   Download and install Certificate from storage. This certificate helps to decrypt the requests
 
@@ -60,20 +60,20 @@ At IOS side
     -   Touch and open WIFI info
     -   Scroll down and choose `Configure Proxy`
 
-    <img src="img/fiddler/ios-1.png" class="inner-img">
+    <img src="/img/fiddler/ios-1.png" class="inner-img">
 
     -   Enter Fiddler's IP address at `Server`
     -   Enter `Port` i.e. `8888` 
     -   Save the settings
 
-    <img src="img/fiddler/ios-2.png" class="inner-img">
+    <img src="/img/fiddler/ios-2.png" class="inner-img">
 
     -   Now to Varify connection please hit the url [ipv4.fiddler:8888](http://ipv4.fiddler:8888) in Android browser. You will get web page as below
     
-    <img src="img/fiddler/DownloadFiddlerRootCert.png" class="inner-img">
+    <img src="/img/fiddler/DownloadFiddlerRootCert.png" class="inner-img">
 
     -   Download and install Certificate. This certificate helps to decrypt the requests
     - On IOS you'll need to enable the certificate by navigating to
     `General > About > ertificate Trust Settings`
 
-    <img src="img/fiddler/ios-cert.png" class="inner-img">
+    <img src="/img/fiddler/ios-cert.png" class="inner-img">

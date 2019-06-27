@@ -14,9 +14,9 @@ I have a big friend circle and it has all kind of characters like funny, emotion
 
 I have examples for each, I'll make a table with their characters and names ;-)
 
-<img src="img/akash/gp.jpg" style="width:30%" />
-<img src="img/akash/gp2.jpg" style="width:30%" />
-<img src="img/akash/gp3.jpg" style="width:30%" />
+<img src="/img/akash/gp.jpg" style="width:30%" />
+<img src="/img/akash/gp2.jpg" style="width:30%" />
+<img src="/img/akash/gp3.jpg" style="width:30%" />
 
 
 | ------------- |:-------------:|| ------------- |:-------------:|
@@ -34,7 +34,7 @@ I have examples for each, I'll make a table with their characters and names ;-)
 <div class="ui-g">
   <div class="ui-g-4" markdown="1">
   <!-- ![Alt Text](../img/folder/blah.jpg) -->
-  <img class="center-block" src="img/akash/akash.jpg">
+  <img class="center-block" src="/img/akash/akash.jpg">
   </div>
   <div class="ui-g-8" markdown="1">
 <ul>
