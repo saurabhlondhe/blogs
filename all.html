@@ -1,5 +1,6 @@
 ---
 layout: compress
+permalink: /all/
 ---
 
 <!DOCTYPE html>
@@ -75,9 +76,7 @@ layout: compress
                             {% for post in category.last %}
                             <li>
                             {% assign urlLink =  post.url | remove: '.html'  %}
-                              <a onclick="window.location.href= '/all/#{{urlLink}}'; 
-                              // window.location.reload(true);
-                              "
+                              <a onclick="window.location.href= '#{{urlLink}}'; window.location.reload(true);"
                               style="font-size: 15px"
                               >{{ post.title }}</a>
                             </li>
@@ -110,7 +109,7 @@ layout: compress
             <div id="myDiv" class="pattern pattern--hidden"></div>
             <!-- cards -->
             <div class="wrapper" id="wrapper">
-              {% for post in paginator.posts %}
+              {% for post in site.posts %}
               <div class="card" data-id="{{ post.id }}">
                 <div class="card__container card__container--closed">
                   <svg
@@ -157,37 +156,7 @@ layout: compress
               {% endfor %}
               <!-- /cards -->
             </div>
-            <!------------------------------------------------------------------------------------------>
-            <!-- pagination -->
-            {% if paginator.total_pages > 1 %}
-            <div class="pagination">
-              {% if paginator.previous_page %}
-              <a
-                href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-                >&laquo; Prev</a
-              >
-              {% else %}
-              <span>&laquo; Prev</span>
-              {% endif %} {% for page in (1..paginator.total_pages) %} {% if
-              page == paginator.page %}
-              <span class="webjeda">{{ page }}</span>
-              {% elsif page == 1 %}
-              <a href="/">{{ page }}</a>
-              {% else %}
-              <a
-                href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
-                >{{ page }}</a
-              >
-              {% endif %} {% endfor %} {% if paginator.next_page %}
-              <a
-                href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-                >Next &raquo;</a
-              >
-              {% else %}
-              <span>Next &raquo;</span>
-              {% endif %}
-            </div>
-            {% endif %}
+            
             <!------------------------------------------------------------------------------------------>
           </div>
         </div>

@@ -339,9 +339,9 @@ window.addEventListener("load",function(){
     
     var index;
     var list = document.getElementsByClassName("mp-level");
-    for (index = 0; index < list.length; ++index) {
-        list[index].style.backgroundColor=document.getElementsByTagName("path")[(index
-            // Math.floor(Math.random() * (400 - 1 )) + 1
-        )].getAttribute("fill");
-    }
+    // for (index = 0; index < list.length; ++index) {
+    //     list[index].style.backgroundColor=document.getElementsByTagName("path")[(index
+    //         // Math.floor(Math.random() * (400 - 1 )) + 1
+    //     )].getAttribute("fill");
+    // }
 },false);
