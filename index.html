@@ -29,11 +29,11 @@ layout: compress
     <link rel="stylesheet" type="text/css" href="/css/modern-blog.css" />
     <link rel="stylesheet" type="text/css" href="/css/pygments.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <script src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/css/component.css" />
+    <script src="/js/modernizr.custom.js"></script>
     <!--[if IE]>
       <script type="text/javascript" src="js/vendors/html5.min.js"></script>
     <![endif]-->
@@ -73,7 +73,7 @@ layout: compress
                           <ul>
                             {% for post in category.last %}
                             <li>
-                            {% assign urlLink =  post.url | remove: '.html' | prepend: site.baseurl %}
+                            {% assign urlLink =  post.url | remove: '.html'  %}
                               <a onclick="window.location.href= '#{{urlLink}}'; window.location.reload(true);"
                               style="font-size: 15px"
                               >{{ post.title }}</a>
@@ -200,8 +200,8 @@ layout: compress
     <script src="/js/vendors/cash.min.js"></script>
     <script src="/js/card-modern-blog.js"></script>
     <script src="/js/modern-blog.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/mlpushmenu.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/mlpushmenu.js"></script>
     <script>
       new mlPushMenu(
         document.getElementById("mp-menu"),
