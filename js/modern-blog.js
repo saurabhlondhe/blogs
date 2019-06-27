@@ -335,4 +335,13 @@ window.onload = demo.init;
 window.addEventListener("load",function(){
     document.getElementById("loading").style.display = "none";
     document.getElementById("wrapper").style.pointerEvents = "auto";
+    console.log();
+    
+    var index;
+    var list = document.getElementsByClassName("mp-level");
+    for (index = 0; index < list.length; ++index) {
+        list[index].style.backgroundColor=document.getElementsByTagName("path")[(index
+            // Math.floor(Math.random() * (400 - 1 )) + 1
+        )].getAttribute("fill");
+    }
 },false);

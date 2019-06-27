@@ -4,6 +4,7 @@ author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
 image: "img/files.jpg"
 date:   2018-10-22
+categories: [Python,Project]
 ---
 [![PyPi Version][pypiversion-button]][pypi]
 ![Python Versions][pyversion-button]

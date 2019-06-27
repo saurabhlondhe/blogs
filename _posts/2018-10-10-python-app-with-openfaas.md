@@ -4,6 +4,7 @@ author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
 image: "img/openfaas.png"
 date:   2018-10-10
+categories: [Cloud,Docker,Linux,Project]
 ---
 OpenFaaS provides function as a service. FaaS is framework for building serverless functions on top of containers. FaaS can be run using Docker Swarm.
 With FaaS developers can focun on development more than servers and deploys. FaaS providers do not charge to their clients for an idel conditions, clients only pay for the computation taken by function.

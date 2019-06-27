@@ -4,6 +4,7 @@ author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
 image: "img/akash/bg.jpg"
 date:   2019-03-24
+categories: []
 ---
  I was planning to write a non-technical blog, many topics got in mind but the first came was _a guy with unique character_ **Akash** ([gambitier](https://gambitier.github.io/About%20Me.html)). Let me introduce him to you..., He's a Computer science Engineer. Even though we were classmates i never knew about him. He was that alone type guy but the best one yet to come ;). 
 

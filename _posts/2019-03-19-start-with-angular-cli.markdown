@@ -4,6 +4,7 @@ author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
 image: "img/angular.png"
 date:   2019-03-19
+categories: [Project,Angular]
 ---
 
 # Angular and angular-cli

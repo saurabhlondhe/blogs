@@ -4,6 +4,7 @@ author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
 image: "img/fiddler-banner.png"
 date:   2019-06-25
+categories: [Network]
 ---
 
 Fiddler is an HTTP debugging proxy server application originally written by Eric Lawrence, formerly a program manager on the Internet Explorer development team at Microsoft.

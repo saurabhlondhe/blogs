@@ -4,6 +4,7 @@ author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
 image: "img/python.jpg"
 date:   2018-02-25
+categories: [Python,Project,Linux]
 ---
 # Working With PyQt4
 PyQt4 is framework for Gui Design. We were working on project Server-Suite  and we were searching for good gui provider in python and decided to go with PyQt4.

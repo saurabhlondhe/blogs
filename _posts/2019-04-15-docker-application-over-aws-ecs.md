@@ -4,6 +4,7 @@ author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
 image: "img/docker-aws.jpg"
 date:   2019-04-15
+categories: [Docker,Microservices]
 ---
 ### Deploying a docker web application to AWS-ECS
 ### For those who had just started, we'll have a look at docker and ECS.
