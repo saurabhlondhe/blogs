@@ -356,4 +356,5 @@ window.addEventListener("load",function(){
     for (index = 0; index < list.length; ++index) {
         list[index].style.backgroundColor=color;
     }
+    document.getElementsByClassName("btn-trigger")[0].style.backgroundColor=color;
 },false);
