@@ -237,7 +237,7 @@ var demo = (function (window) {
             ) {
             radius= track.width * 1.5;
           } else {
-            radius= track.width / 2;
+            radius= track.width / 1.8;
           }
          
 

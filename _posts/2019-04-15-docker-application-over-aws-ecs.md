@@ -1,5 +1,5 @@
 ---
-title:  "Deploying a docker web application using AWS-ECS"
+title:  "Deploy a docker web application using AWS-ECS"
 author: "Saurabh Londhe"
 avatar: "img/authors/saurabh.jpg"
 image: "img/docker-aws.jpg"
