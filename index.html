@@ -160,7 +160,7 @@ layout: compress
             <!------------------------------------------------------------------------------------------>
             <!-- pagination -->
             {% if paginator.total_pages > 1 %}
-            <div class="pagination">
+            <div class="pagination ui-g">
               {% if paginator.previous_page %}
               <a
                 href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
@@ -174,7 +174,7 @@ layout: compress
               {% elsif page == 1 %}
               <a href="/">{{ page }}</a>
               {% else %}
-              <a
+              <a class="page-number-keys"
                 href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
                 >{{ page }}</a
               >
