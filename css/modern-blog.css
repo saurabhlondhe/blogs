@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
 	width: 10px;
-	height: 10px
+	height: 10px;
   }
   
   /* Track */
@@ -19,7 +19,7 @@
   ::-webkit-scrollbar-thumb:hover {
 	background: #000000d9; 
   }
-  ::-moz-selection { /* Code for Firefox */
+  ::-moz-selection { 
 	color: black;
 	background: #fc0;
   }

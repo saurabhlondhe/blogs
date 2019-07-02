@@ -338,10 +338,22 @@ window.addEventListener("load",function(){
     console.log();
     
     var index;
+    var color=document.getElementsByTagName("path")[(100)].getAttribute("fill");
+    console.log(color);
+    var arr=[];
+    var temp=color.split("#")[1].match(/.{1,1}/g);
+    temp.forEach(element => {
+        if (element > 'c'){
+            arr.push('c');
+        }
+        else{
+            arr.push(element)
+        }
+    });
+    color="#"+(arr.join(""));
+    console.log(color);
     var list = document.getElementsByClassName("mp-level");
-    // for (index = 0; index < list.length; ++index) {
-    //     list[index].style.backgroundColor=document.getElementsByTagName("path")[(index
-    //         // Math.floor(Math.random() * (400 - 1 )) + 1
-    //     )].getAttribute("fill");
-    // }
+    for (index = 0; index < list.length; ++index) {
+        list[index].style.backgroundColor=color;
+    }
 },false);
