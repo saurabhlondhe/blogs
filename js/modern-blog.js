@@ -392,3 +392,7 @@ span.onclick = function() {
 modal.onclick = function() { 
     modal.style.display = "none";
   }
+
+  window.onhashchange = function() {
+    modal.style.display="none";
+   }
