@@ -50,6 +50,7 @@ layout: compress
       <h3 style="margin: 60vh 40% 30vh 40%; color: white">We are loading high Graphics, It takes time</h3>
     </div>
     <div class="container">
+        {% include imgModal.html %}
       <div class="ui mp-pusher" id="mp-pusher">
         <!-- mp-menu -->
         <nav id="mp-menu" class="mp-menu">
@@ -139,7 +140,7 @@ layout: compress
                     ></image>
                   </svg>
                   <div class="card__content">
-                    <i class="card__btn-close fa fa-times"></i>
+                    <i class="card__btn-close fa fa-times" onclick="window.history.back()"></i>
                     <div class="card__caption">
                       <h2 class="card__title">{{ post.title }}</h2>
                       <p class="card__subtitle">{{ post.subtitle }}</p>
