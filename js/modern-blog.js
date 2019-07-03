@@ -339,7 +339,7 @@ window.addEventListener("load",function(){
     
     var index;
     var color=document.getElementsByTagName("path")[(100)].getAttribute("fill");
-    console.log(color);
+    // console.log(color);
     var arr=[];
     var temp=color.split("#")[1].match(/.{1,1}/g);
     temp.forEach(element => {
@@ -351,10 +351,23 @@ window.addEventListener("load",function(){
         }
     });
     color="#"+(arr.join(""));
-    console.log(color);
+    // console.log(color);
     var list = document.getElementsByClassName("mp-level");
     for (index = 0; index < list.length; ++index) {
         list[index].style.backgroundColor=color;
     }
     document.getElementsByClassName("btn-trigger")[0].style.backgroundColor=color;
 },false);
+
+var i,j;
+var card=document.getElementsByClassName("card__content");
+for (i = 0; i < card.length; ++i) {
+    var t=card[i].getElementsByTagName("img");
+    for (j = 0; j < t.length; ++j) {
+        if (t[j].className !="meta__avatar"){
+            t[j].style.cursor="pointer";
+            t[j].setAttribute("onclick","window.open('"+t[j].src+"');");
+        }
+    }
+
+}
