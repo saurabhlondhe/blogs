@@ -31,6 +31,12 @@
   .highlight .o {
     font-weight: bold;
   }
+  .highlight .kn {
+    color: #008bff;
+  }
+  .highlight .nd {
+    color: #008bff;
+  }
   .highlight .cm {
     color: #998;
     font-style: italic;
@@ -131,7 +137,7 @@
     font-weight: bold;
   }
   .highlight .nn {
-    color: #555;
+    color: #fff;
   }
   .highlight .nt {
     color: #5e5ee6;
@@ -352,7 +358,7 @@
     font-style:italic
    }
    blockquote {
-    border-left:2px solid #777;
+    border-left:2px solid #000;
     padding-left:20px;
     font-style:italic;
     font-size:18px;
