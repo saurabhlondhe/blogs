@@ -1,2 +1,2 @@
 # Saurabh Londhe's Blog
-## [Live Demo](https://saurabhlondhe.xyz/blogs/)
+## [Live Demo](https://blog.saurabhlondhe.com/)
