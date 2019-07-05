@@ -8,6 +8,7 @@ categories: [Python,Linux,Project]
 ---
 
 Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's BSD licensed[[1]](http://flask.pocoo.org/)
+
 Jinja2 is just a teplating language, means we can keep HTML templates to reuse then and by using its features we can iterate the objects and parse data in HTML.
 If you want to know about opensource licenses please check out [here](https://opensource.org/licenses)
 
@@ -36,8 +37,9 @@ if __name__ == '__main__':
 Here  `@app.route("/")` is defining a path on which the below method `hello` will be called. We are running app in debug mode so after running program a temporary http server will be created and as you go on changing the code the server will auto detect the changes and restart itself.
 
  To get the output hit the api call using ```curl``` and get response in JSON,
-You can use any approch for api call, either from browser or [Postman](https://www.getpostman.com/downloads/)._
-In flask `GET` method is by default for any function but we can specify other if we need:+1:
+You can use any approch for api call, either from browser or [Postman](https://www.getpostman.com/downloads/).
+
+In flask `GET` method is by default for any function but we can specify other if we need :+1:
 
 ```sh
 $ curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:5000/
@@ -107,7 +109,6 @@ def path_hierarchy(path):
 
 ### Complete Source code
 
-> For Window operating systems upcomment respective lines
 
 ```python
 #!flask/bin/python
@@ -149,6 +150,8 @@ if __name__ == '__main__':
 ### Output
 Hit the following URL
 [http://127.0.0.1:5000/files/c:/](http://127.0.0.1:5000/files/c:/)
+
+output will be similar to the following one.
 
 ```json
 {
