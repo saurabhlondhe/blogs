@@ -292,6 +292,7 @@ table, th, td {
 	margin: 0 auto;
 	padding: 25px 30px 100px;
 	color: white;
+	text-align: justify;
 }
 
 .card__copy p:first-of-type {

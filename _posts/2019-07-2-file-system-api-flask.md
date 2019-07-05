@@ -8,12 +8,14 @@ categories: [Python,Linux,Project]
 ---
 
 Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's BSD licensed[[1]](http://flask.pocoo.org/)
+Jinja2 is just a teplating language, means we can keep HTML templates to reuse then and by using its features we can iterate the objects and parse data in HTML.
+If you want to know about opensource licenses please check out [here](https://opensource.org/licenses)
 
 So we can create APIs and by using Jinja2 we can create web pages too, But for now just focus on Flask APIs.
 
-## Installed flask?
+## Installed flask? :flushed:
 
-If yes skip to next else here is the command
+If yes skip to next else here :point_down: is the command
 ```sh
 pip install flask
 ```
@@ -31,7 +33,12 @@ def hello():
 if __name__ == '__main__':
     app.run(debug=True)
 ```
-Hit the api call using ```curl``` and get response in JSON
+Here  `@app.route("/")` is defining a path on which the below method `hello` will be called. We are running app in debug mode so after running program a temporary http server will be created and as you go on changing the code the server will auto detect the changes and restart itself.
+
+ To get the output hit the api call using ```curl``` and get response in JSON,
+You can use any approch for api call, either from browser or [Postman](https://www.getpostman.com/downloads/)._
+In flask `GET` method is by default for any function but we can specify other if we need:+1:
+
 ```sh
 $ curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:5000/
 
@@ -43,6 +50,9 @@ Date: Tue, 02 Jul 2019 12:40:21 GMT
 
 Hello World!
 ```
+API responces can of two types either XML or JSON, Here we are expecting a JSON as we have mentioned in curl command.
+
+---
 
 So now lets move to create the actual File System API.
 Following libraries will be used for same
@@ -52,9 +62,11 @@ Following libraries will be used for same
 -   errno
 
 ### Writing just a path api
-
-We can pass parameters in routes such as `/file/<filename>`
-But we'll be passisng path of the file so `/files/<path:path>`, here <`path`:path> the first one is datatype and the <path:`path`> is variable name.
+This path API will take a argument of filename from route and return it.
+In further steps we'll be processing the path :simple_smile:
+- Adding parameters in route
+  - We can pass parameters in routes such as `/file/<filename>` where `filename` will be considered as an argumant to below function.
+  - Here we'll be passisng path of the file so `/files/<path:path>`, here <`path`:path> the first one is datatype and the <path:`path`> is variable name.
 
 ```python
 #!flask/bin/python
@@ -74,22 +86,20 @@ if __name__ == '__main__':
 
 This api will take a input from route and returns it.
 
-![Basic Path API](/img/flask/1.png)
+![Basic Path API](img/flask/1.png)
 
 ### Create a modal that will repesent the data
 
 ```python
 hierarchy = {
-        'type': 'folder',
-        'name': os.path.basename(path),
+        'type': 'folder',     # type of file (folder/file)
+        'name': os.path.basename(path),   # name of file with extension
         'path': path,
     }
 ```
 
-
-Using recursion for nested files
-> For now ignore the recursoin code it'll be clear later.
-
+### Using recursion for nested files :confused:
+> For now ignore the recursoin, it'll be clear later. If you don't know what it's checkout [:point_right: :confused:](https://www.google.com/search?q=recursion)
 ```python
 def path_hierarchy(path):
     path_hierarchy(os.path.join(path, contents))
