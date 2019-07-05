@@ -29,6 +29,13 @@
 	background: #fc0;
   }
 
+*:focus {
+	outline: 0;
+}
+* {
+	outline: 0;
+}
+
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */

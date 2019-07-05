@@ -47,52 +47,60 @@ layout: compress
   <body class="body">
     <div id="loading">
       <img src="/img/loading.gif" alt="" />
-      <h3 style="margin: 60vh 40% 30vh 40%; color: white">We are loading high Graphics, It takes time</h3>
+      <h3 style="margin: 60vh 40% 30vh 40%; color: white">
+        We are loading high Graphics, It takes time
+      </h3>
     </div>
     <div class="container">
-        {% include imgModal.html %}
+      {% include imgModal.html %}
       <div class="ui mp-pusher" id="mp-pusher">
         <!-- mp-menu -->
         <nav id="mp-menu" class="mp-menu">
           <div id="menu-bar" class="mp-level">
             <h2 class="icon icon-world">Saurabh Londhe</h2>
             <ul>
-                <li class="icon icon-arrow-left">
-                    <a class="" href="#">About Me</a>
-                  </li>
-                  <li class="icon icon-arrow-left">
-                    <a class="" href="/all/">All Blogs</a>
-                  </li>
-            <li class="icon icon-arrow-left">
-								<a class="icon icon-news" href="#">Categories</a>
-								<div class="mp-level">
-									<h2 class="icon icon-news">All Categories</h2>
-									<ul>
-                      {% for category in site.categories %}
-                      <li class="icon icon-arrow-left">
-                        <a href="#" name="{{ category | first }}">{{
-                          category | first
-                        }}</a>
-                        <div class="mp-level">
-                          <h2>{{ category | first }}</h2>
-                          <ul>
-                            {% for post in category.last %}
-                            <li>
-                            {% assign urlLink =  post.url | remove: '.html'  %}
-                              <a onclick="window.location.href= '/all/#{{urlLink}}'; 
-                              // window.location.reload(true);
+              <li class="icon icon-arrow-left">
+                <a class="" href="#">About Me</a>
+              </li>
+              <li class="icon icon-arrow-left">
+                <a class="" href="/all/">All Blogs</a>
+              </li>
+              <li class="icon icon-arrow-left">
+                <a class="icon icon-news" href="#">Categories</a>
+                <div class="mp-level">
+                  <h2 class="icon icon-news">All Categories</h2>
+                  <ul>
+                    {% for category in site.categories %}
+                    <li class="icon icon-arrow-left">
+                      <a href="#" name="{{ category | first }}">{{
+                        category | first
+                      }}</a>
+                      <div class="mp-level">
+                        <h2>{{ category | first }}</h2>
+                        <ul>
+                          {% for post in category.last %}
+                          <li>
+                            {% assign urlLink = post.url | remove: '.html' %}
+                            <a
+                              onclick="window.location.href= '/all/#{{
+                                urlLink
+                              }}'; 
                               "
                               style="font-size: 15px"
-                              >{{ post.title }}</a>
-                            </li>
-                            {% endfor %}
-                          </ul>
-                        </div>
-                      </li>
-                      {% endfor %}
-									</ul>
-								</div>
-							</li>
+                              >{{ post.title }}</a
+                            >
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <a href="">How many visited: <input type="button" style="background-color: transparent;border: none;color: white" value="" id="siteCount"></a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -140,7 +148,10 @@ layout: compress
                     ></image>
                   </svg>
                   <div class="card__content">
-                    <i class="card__btn-close fa fa-times" onclick="window.history.back()"></i>
+                    <i
+                      class="card__btn-close fa fa-times"
+                      onclick="window.history.back()"
+                    ></i>
                     <div class="card__caption">
                       <h2 class="card__title">{{ post.title }}</h2>
                       <p class="card__subtitle">{{ post.subtitle }}</p>
@@ -178,7 +189,8 @@ layout: compress
               {% elsif page == 1 %}
               <a href="/" class="webjeda">{{ page }}</a>
               {% else %}
-              <a class="page-number-keys"
+              <a
+                class="page-number-keys"
                 href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
                 >{{ page }}</a
               >

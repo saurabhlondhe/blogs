@@ -393,6 +393,13 @@ modal.onclick = function() {
     modal.style.display = "none";
   }
 
-  window.onhashchange = function() {
+window.onhashchange = function() {
     modal.style.display="none";
-   }
+}
+let targetUrl = 'saurabhlondhe.com';
+let query = '?url=' + encodeURIComponent(targetUrl);
+let xmlHttp = new XMLHttpRequest();
+xmlHttp.open('GET', 'https://hitcounter.pythonanywhere.com/nocount' + query, false);
+xmlHttp.send(null);
+var count = xmlHttp.responseText;
+document.getElementById("siteCount").value=count;
