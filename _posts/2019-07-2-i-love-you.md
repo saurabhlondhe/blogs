@@ -7,10 +7,10 @@ date:   2019-07-04
 categories: [Life]
 ---
 <div class="ui-g">
-    <div class="ui-lg-6 ui-md-12 ui-sm-12">
+    <div class="ui-lg-6 girl-boy">
         <img src="/img/ilu/kids2.jpg">
     </div>
-    <div class="ui-lg-6 ui-md-0 ui-sm-0" style="text-align:center">
+    <div class="ui-lg-6 ilu-text" style="text-align:center">
     <h1 style="margin-top:150px;">I</h1>
     <h1>Love</h1>
     <h1>You..</h1>
