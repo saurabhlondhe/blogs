@@ -45,6 +45,7 @@ html, body, .container, .scroller {
 	top: 6px;
 	left: 6px;
 	width: 48px;
+	font-size: 16px;
 	background-color: transparent;
 	outline: 0;
 	border: none;

@@ -114,6 +114,27 @@
 	  max-height: 100vh;
 	}
   }
+.ashish-blog{
+	text-align:center;
+	border: #000 10px dashed;
+	font-size:20px;
+	color: #000;
+	padding: 10px;
+	line-height: 40px;
+	font-style: italic;
+}
+.ilu-blog{
+	/* border-left: #000 solid 10px; */
+	/* border-right: #000 solid 10px; */
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+@media only screen and (max-width: 400px) {
+	.ashish-blog{
+	border: #000 4px dashed;
+	font-size: 17px;
+	}
+}
 .pagination a, .pagination span {
 	padding: 7px 18px;
 	border: 1px solid black;
@@ -300,6 +321,7 @@ table, th, td {
 	padding: 25px 30px 100px;
 	color: white;
 	text-align: justify;
+	line-height: 35px;
 }
 
 .card__copy p:first-of-type {
@@ -390,7 +412,7 @@ table, th, td {
 		padding: 0 0 25px 0;
 	}
 	.card__copy {
-		font-size: 90%;
+		line-height: 35px;
 		padding: 25px 0px 100px;
 	}
 }
@@ -451,7 +473,7 @@ a:focus {
 
 .body {
 	background: #acaad1;
-	font-family: COURIER;
+	font-family: monospace;	
 }
 
 .body header a {
