@@ -62,48 +62,7 @@ permalink: /all/
     </div>
     <div class="container">
         {% include imgModal.html %}
-      <div class="ui mp-pusher" id="mp-pusher">
-        <!-- mp-menu -->
-        <nav id="mp-menu" class="mp-menu">
-          <div id="menu-bar" class="mp-level">
-            <!-- <h2 class="icon icon-world">All Categories</h2> -->
-            <ul>
-                <li class="icon icon-arrow-left">
-                    <a class="" href="#">About Me</a>
-                  </li>
-            <li class="icon icon-arrow-left">
-								<a class="icon icon-news" href="#">Categories</a>
-								<div class="mp-level">
-									<h2 class="icon icon-news">All Categories</h2>
-									<ul>
-                      {% for category in site.categories %}
-                      <li class="icon icon-arrow-left">
-                        <a href="#" name="{{ category | first }}">{{
-                          category | first
-                        }}</a>
-                        <div class="mp-level">
-                          <h2>{{ category | first }}</h2>
-                          <ul>
-                            {% for post in category.last %}
-                            <li>
-                            {% assign urlLink =  post.url | remove: '.html'  %}
-                              <a onclick="window.location.href= '#{{urlLink}}'; window.location.reload(true);"
-                              style="font-size: 15px"
-                              >{{ post.title }}</a>
-                            </li>
-                            {% endfor %}
-                          </ul>
-                        </div>
-                      </li>
-                      {% endfor %}
-									</ul>
-								</div>
-							</li>
-            </ul>
-          </div>
-        </nav>
-        <!-- /mp-menu -->
-
+        {% include left-panel.html %}
         <div class="scroller">
           <!-- this is for emulating position fixed of the nav -->
           <button href="#" id="trigger" class="btn-trigger">

@@ -1,0 +1,66 @@
+<div class="ui mp-pusher" id="mp-pusher">
+        <!-- mp-menu -->
+        <nav id="mp-menu" class="mp-menu">
+          <div id="menu-bar" class="mp-level">
+            <h2 class="icon icon-world">Saurabh Londhe</h2>
+            <ul>
+              <li class="icon icon-arrow-left">
+                <a class="" href="/">Home</a>
+              </li>
+              <li class="icon icon-arrow-left">
+                <a class="" href="/all/">All Blogs</a>
+              </li>
+              <li class="icon icon-arrow-left">
+                <a class="icon icon-news" href="#">Categories</a>
+                <div class="mp-level">
+                  <h2 class="icon icon-news">All Categories</h2>
+                  <ul>
+                    {% for category in site.categories %}
+                    <li class="icon icon-arrow-left">
+                      <a href="#" name="{{ category | first }}">{{
+                        category | first
+                      }}</a>
+                      <div class="mp-level">
+                        <h2>{{ category | first }}</h2>
+                        <ul>
+                          {% for post in category.last %}
+                          <li>
+                            {% assign urlLink = post.url | remove: '.html' %}
+                            <a
+                              onclick="window.location.href= '/all/#{{
+                                urlLink
+                              }}'; 
+                              console.log(window.location.pathname);
+                            if (
+                                window.location.pathname== '/all/'
+                            ) {
+                                window.location.reload()
+                            }
+                              "
+                              style="font-size: 15px"
+                              >{{ post.title }}</a
+                            >
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </li>
+              <li class="icon icon-arrow-left">
+                <a href="#">Support Me :blush:</a>
+                <div class="mp-level">
+                    <h2 class="icon icon-news">Donate</h2>
+                    <ul>
+                        <li>
+                            <img src="/img/PhonePeQR_8888603379.png" alt="" style="width: 300px">
+                        </li>
+                    </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- /mp-menu -->
